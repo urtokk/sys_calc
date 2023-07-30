@@ -2,7 +2,7 @@ use core::fmt;
 
 use super::{token::{Token, OperPrec}, tokenizer::Tokenizer};
 
-#[derive(Clone)]
+#[derive(Clone,Debug)]
 pub enum Node {
     Add(Box<Node>, Box<Node>),
     Subtract(Box<Node>, Box<Node>),
